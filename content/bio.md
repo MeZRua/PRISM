@@ -1,5 +1,7 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am an LLM Engineer and Researcher now. I received my Ph.D. degree in the [Department of Computer Science](https://www.cs.cityu.edu.hk/), [City University of Hong Kong](https://www.cityu.edu.hk/).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+Previously, I interned at **Huawei Corporate Development Department (Hubble Technology Investment)**, one hedge fund and **Huawei 2012 Labs**.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+Prior to this, I obtained a BSc degree in Wu Yuzhang Honors College from the Sichuan University.
+
+My current research focuses on LLM Post-train.
