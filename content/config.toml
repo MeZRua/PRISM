@@ -67,11 +67,11 @@ type   = "page"
 target = "publications"
 href   = "/publications"
 
-[[navigation]]         # ⭐ 新增 Blog 导航
-title  = "Blog"
-type   = "page"
-target = "blog"
-href   = "/blog"
+# [[navigation]]         # ⭐ 新增 Blog 导航
+# title  = "Blog"
+# type   = "page"
+# target = "blog"
+# href   = "/blog"
 
 [[navigation]]
 title  = "Teaching"
