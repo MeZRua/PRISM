@@ -23,15 +23,15 @@ interface PublicationsListProps {
 }
 
 const GROUPS = [
-    { key: 'article',       label: '📖 Journal Papers' },
-    { key: 'inproceedings', label: '🏛️ Conference Papers' },
-    { key: 'unpublished',   label: '✏️ Preprint, Revised & Reviewing Papers' },
+    { key: 'journal',    label: '📖 Journal Papers' },
+    { key: 'conference', label: '🏛️ Conference Papers' },
+    { key: 'preprint',   label: '✏️ Preprint, Revised & Reviewing Papers' },
 ];
 
 const ABBR_COLOR: Record<string, string> = {
-    article:       'bg-purple-600',
-    inproceedings: 'bg-blue-600',
-    unpublished:   'bg-orange-500',
+    journal:    'bg-purple-600',
+    conference: 'bg-blue-600',
+    preprint:   'bg-orange-500',
 };
 
 export default function PublicationsList({ config, publications, embedded = false }: PublicationsListProps) {
