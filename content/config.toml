@@ -14,7 +14,7 @@ avatar = "/bio.jpg"
 #  社交 & 联系方式（留空或删除对应行则隐藏）
 # ============================================================
 [social]
-email    = "cs.@my.cityu.edu.hk"                # ← 替换为真实邮箱
+email    = "cs@my.cityu.edu.hk"                # ← 替换为真实邮箱
 location = "Hong Kong SAR, China"                        # ← 替换为所在城市
 location_url = "https://maps.google.com/maps?q=City+University+of+Hong+Kong"
 
