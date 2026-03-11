@@ -1,0 +1,9 @@
+[page]
+title = "Blog"
+description = "Research, thoughts and lives"
+type = "blog"   # PRISM 页面类型
+
+[settings]
+posts_per_page = 8
+show_tags = true
+show_date = true
