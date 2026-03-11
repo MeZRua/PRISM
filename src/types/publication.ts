@@ -45,6 +45,14 @@ export interface Publication {
   summary?: string;
   researchArea: ResearchArea;
   description?: string;
+
+  // ── 新增的展示字段 ────────────────────────
+  abbr?: string;          // 徽章文字，如 "GLOBECOM 2023"
+  venueDetail?: string;   // 斜体说明完整行，如 "IEEE GLOBECOM — KL, 2023"
+  slides?: string;        // Slides 链接
+  video?: string;         // Video 链接
+  linkLabel?: string;     // 自定义 url/html 链接按钮文字，默认 "Paper"
+
 }
 
 export type PublicationType =
