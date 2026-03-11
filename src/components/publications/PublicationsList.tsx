@@ -289,8 +289,13 @@ export default function PublicationsList({ config, publications, embedded = fals
 
                                                     {/* 链接按钮区 */}
                                                     <div className="flex flex-wrap gap-2 mt-3">
-                                                        {pub.arxiv && (
-                                                            <a href={pub.arxiv} target="_blank" rel="noopener noreferrer" className={linkBtn}>
+                                                        {pub.arxivId && (
+                                                            <a
+                                                                href={`https://arxiv.org/abs/${pub.arxivId}`}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className={linkBtn}
+                                                            >
                                                                 📄 arXiv
                                                             </a>
                                                         )}
