@@ -113,7 +113,7 @@ function getDefaultConfig(): SiteConfig {
     throw new Error('Failed to load content/config.toml');
   }
   // 👇 加这一行，覆盖 config.toml 里的静态时间
-  if (parsed.site) parsed.site.last_updated = getLastUpdated();
+  // if (parsed.site) parsed.site.last_updated = getLastUpdated();
   return parsed as SiteConfig;
 }
 
