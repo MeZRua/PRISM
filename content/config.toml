@@ -1,13 +1,13 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "MZ"
+description = "LLM Engineer & Researcher/PhD@CityU"
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+last_updated = "March 11, 2026"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "MZ R"
+title = "LLM Engineer"
+institution = "City University of Hong Kong"
 avatar = "/bio.jpg"
 
 [social]
