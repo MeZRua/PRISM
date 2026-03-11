@@ -80,6 +80,19 @@ function readConfigFromPath(configPath: string): Partial<SiteConfig> | null {
   }
 }
 
+function getLastGitUpdated(): string | undefined {
+  try {
+    const gitDate = execSync('git log -1 --format=%cd --date=format:"%B %d, %Y"', {
+      encoding: 'utf-8',
+    }).trim();
+
+    return gitDate || undefined;
+  } catch (error) {
+    console.warn('Failed to get last git updated date:', error);
+    return undefined;
+  }
+}
+
 function mergeConfig(base: SiteConfig, localized?: Partial<SiteConfig> | null): SiteConfig {
   if (!localized) return base;
 
@@ -114,7 +127,17 @@ function getDefaultConfig(): SiteConfig {
   }
   // 👇 加这一行，覆盖 config.toml 里的静态时间
   // if (parsed.site) parsed.site.last_updated = getLastUpdated();
-  return parsed as SiteConfig;
+  // return parsed as SiteConfig;
+  const config = parsed as SiteConfig;
+  const gitLastUpdated = getLastGitUpdated();
+
+  return {
+    ...config,
+    site: {
+      ...config.site,
+      last_updated: gitLastUpdated || config.site.last_updated,
+    },
+  };
 }
 
 export function getConfig(locale?: string): SiteConfig {
