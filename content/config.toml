@@ -13,9 +13,7 @@ avatar = "/bio.jpg"
 # ============================================================
 #  社交 & 联系方式（留空或删除对应行则隐藏）
 # ============================================================
-[
-social
-]
+[social]
 email    = "cs.@my.cityu.edu.hk"                # ← 替换为真实邮箱
 location = "Hong Kong SAR, China"                        # ← 替换为所在城市
 location_url = "https://maps.google.com/maps?q=City+University+of+Hong+Kong"
@@ -33,18 +31,14 @@ linkedin       = "https://linkedin.com/in/yourprofile"                 # ← 替
 # ============================================================
 #  功能开关
 # ============================================================
-[
-features
-]
+[features]
 enable_likes         = true    # 开启点赞（保持开启，增加互动感）
 enable_one_page_mode = false   # 多页模式（有 Blog 时建议保持 false）
 
 # ============================================================
 #  多语言支持（中英双语）
 # ============================================================
-[
-i18n
-]
+[i18n]
 enabled        = true
 locales        = ["en", "zh"]   # en 为第一项即默认语言
 default_locale = "en"
@@ -53,9 +47,7 @@ fixed_locale   = "en"
 persist        = true           # 记住用户语言偏好
 switcher       = true           # 右上角显示语言切换按钮
 
-[
-i18n.labels
-]
+[i18n.labels]
 en = "English"
 zh = "中文"
 
@@ -63,57 +55,43 @@ zh = "中文"
 #  顶部导航菜单（顺序即显示顺序）
 # ============================================================
 
-[[
-navigation
-]]
+[[navigation]]
 title  = "About"
 type   = "page"
 target = "about"
 href   = "/"
 
-[[
-navigation
-]]
+[[navigation]]
 title  = "Publications"
 type   = "page"
 target = "publications"
 href   = "/publications"
 
-[[
-navigation
-]]          # ⭐ 新增 Blog 导航
+[[navigation]]         # ⭐ 新增 Blog 导航
 title  = "Blog"
 type   = "page"
 target = "blog"
 href   = "/blog"
 
-[[
-navigation
-]]
+[[navigation]]
 title  = "Teaching"
 type   = "page"
 target = "teaching"
 href   = "/teaching"
 
-[[
-navigation
-]]
+[[navigation]]
 title  = "Awards"
 type   = "page"
 target = "awards"
 href   = "/awards"
 
-[[
-navigation
-]]
+[[navigation]]
 title  = "Services"
 type   = "page"
 target = "services"
 href   = "/services"
 
-[[
-navigation
-]]
+[[navigation]]
 title  = "CV"
 type   = "page"
 target = "cv"
