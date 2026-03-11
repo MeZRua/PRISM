@@ -2,6 +2,20 @@ import fs from 'fs';
 import path from 'path';
 import { parse } from 'smol-toml';
 import type { I18nConfig } from '@/types/i18n';
+import { execSync } from 'child_process'
+
+function getLastUpdated(): string {
+  try {
+    return execSync('git log -1 --format=%cd --date=format:"%B %Y"')
+      .toString()
+      .trim()
+  } catch {
+    return new Date().toLocaleDateString('en-US', {
+      month: 'long',
+      year:  'numeric',
+    })
+  }
+}
 
 export interface SiteConfig {
   site: {
