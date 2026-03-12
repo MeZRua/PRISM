@@ -212,6 +212,9 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       // Check for co-author marker (#)
       const isCoAuthor = name.includes('#');
 
+      // Check for equal contribution marker ^ → ^
+      const isFiAuthor = name.includes('^');
+
       // Remove special markers from name
       name = name.replace(/[*#]/g, '');
 
