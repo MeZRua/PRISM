@@ -238,6 +238,7 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
         isHighlighted,
         isCorresponding,
         isCoAuthor,
+        isFiAuthor,
       };
     })
     .filter(author => author.name);
