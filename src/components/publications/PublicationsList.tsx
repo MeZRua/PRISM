@@ -269,6 +269,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                                 {author.isCorresponding && (
                                                                     <sup className="ml-0.5 text-neutral-500">†</sup>
                                                                 )}
+                                                                {author.isFiAuthor && (
+                                                                    <sup className="ml-0.5 text-neutral-500">*</sup>   // ^ → ^
+                                                                )}
                                                                 {idx < pub.authors.length - 1 && ', '}
                                                             </span>
                                                         ))}
