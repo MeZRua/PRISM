@@ -216,7 +216,7 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       const isFiAuthor = name.includes('^');
 
       // Remove special markers from name
-      name = name.replace(/[*#]/g, '');
+      name = name.replace(/[*#^]/g, '');
 
       // Handle "Last, First" format
       if (name.includes(',')) {
