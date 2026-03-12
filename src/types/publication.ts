@@ -52,6 +52,9 @@ export interface Publication {
   slides?: string;        // Slides 链接
   video?: string;         // Video 链接
   linkLabel?: string;     // 自定义 url/html 链接按钮文字，默认 "Paper"
+  // ── 补充缺失字段 ────────────────────
+  html?: string;
+
 
 }
 
