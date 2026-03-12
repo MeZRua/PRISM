@@ -88,9 +88,22 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
       preview,
-
+      // ── 新增：展示字段 ──────────────────────────
+      abbr: cleanBibTeXString(tags.abbr),
+      venueDetail: cleanBibTeXString(tags.venueDetail || tags.venue_detail),
+      arxivId: cleanBibTeXString(tags.arxivId || tags.arxiv),
+      html: cleanBibTeXString(tags.html),
+      linkLabel: cleanBibTeXString(tags.linkLabel || tags.link_label),
+      slides: cleanBibTeXString(tags.slides),
+      video: cleanBibTeXString(tags.video),
+      // ────────────────────────────────────────────
+    
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, [
+        'selected', 'preview', 'description', 'keywords', 'code',
+        'abbr', 'venuedetail', 'venue_detail', 'arxivid', 'arxiv',
+        'html', 'linklabel', 'link_label', 'slides', 'video',
+      ]),
     };
 
     // Clean up undefined fields
